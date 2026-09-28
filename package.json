@@ -1,0 +1,15 @@
+{
+  "name": "digital-parcel-repository-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:mern": "npm install --prefix mern-app/server && npm install --prefix mern-app/client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix mern-app/server run dev",
+    "dev:client": "npm --prefix mern-app/client run dev",
+    "build:client": "npm --prefix mern-app/client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
